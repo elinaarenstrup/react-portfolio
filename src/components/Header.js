@@ -3,36 +3,70 @@ import styled from "styled-components/macro";
 import Lottie from "lottie-react-web";
 import animation from "../arrow.json";
 
-export const Header = () => {
-  return (
-    <HeaderDiv>
-      <HeaderContainer>
-        <Nav>
-          <Link href="https://www.linkedin.com">LinkedIn</Link>
-          <Link href="https://www.github.com">GitHub</Link>
-          <Link href="mailto:elinaarenstrup@gmail.com">Email</Link>
-        </Nav>
-        <PresentationContainer>
-          <HeyYou>Hello you,</HeyYou>
+const Presentation = styled.h2`
+  font-family: "Bebas Neue";
+  font-size: 72px;
+  text-align: left;
+  margin: 0 0 10px 0;
+  color: #e92272;
+`;
 
-          <Presentation>I'm Elin Aarenstrup.</Presentation>
-          <Presentation2>Frontend developer / Graphic designer</Presentation2>
+const Presentation2 = styled.h2`
+  font-family: "Bebas Neue";
+  font-size: 24px;
+  text-align: left;
+  letter-spacing: 2px;
+  margin: 0 0 5px 0;
+  color: #000;
+`;
 
-          <Paragraph>
-            Passionate about <Color>colors</Color> & <Play>play</Play>
-          </Paragraph>
-          <LottieContainer>
-            <Lottie
-              options={{
-                animationData: animation,
-              }}
-            />
-          </LottieContainer>
-        </PresentationContainer>
-      </HeaderContainer>
-    </HeaderDiv>
-  );
-};
+const Paragraph = styled.h2`
+  font-family: "Bebas Neue";
+  font-size: 24px;
+  text-align: left;
+  letter-spacing: 2px;
+  margin: 0px;
+  color: #000;
+
+  :hover {
+    color: yellow;
+  }
+`;
+
+const Color = styled.span`
+  color: #e92272;
+`;
+
+const Play = styled.span`
+  color: white;
+`;
+
+const HeaderDiv = styled.div`
+  height: 800px;
+  background-color: pink;
+`;
+
+const PresentationContainer = styled.div`
+  padding-top: 50px;
+  width: 80%;
+  justify-content: center;
+  background-color: pink;
+`;
+
+const Nav = styled.div`
+  width: 100%;
+  height: 40px;
+`;
+
+const HeaderContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+`;
 
 const LottieContainer = styled.div`
   width: 300px;
@@ -47,6 +81,7 @@ const Link = styled.button`
   text-transform: uppercase;
   background-color: pink;
   color: #000;
+  cursor: pointer;
 
   :hover {
     color: yellow;
@@ -189,67 +224,33 @@ const HeyYou = styled.h1`
   }
 `;
 
-const Presentation = styled.h2`
-  font-family: "Bebas Neue";
-  font-size: 72px;
-  text-align: left;
-  margin: 0 0 10px 0;
-  color: #e92272;
-`;
+export const Header = () => {
+  return (
+    <HeaderDiv>
+      <HeaderContainer>
+        <Nav>
+          <Link href="https://www.linkedin.com">LinkedIn</Link>
+          <Link href="https://www.github.com">GitHub</Link>
+          <Link href="mailto:elinaarenstrup@gmail.com">Email</Link>
+        </Nav>
+        <PresentationContainer>
+          <HeyYou>Hello you,</HeyYou>
 
-const Presentation2 = styled.h2`
-  font-family: "Bebas Neue";
-  font-size: 24px;
-  text-align: left;
-  letter-spacing: 2px;
-  margin: 0 0 5px 0;
-  color: #000;
-`;
+          <Presentation>I'm Elin Aarenstrup.</Presentation>
+          <Presentation2>Frontend developer / Graphic designer</Presentation2>
 
-const Paragraph = styled.h2`
-  font-family: "Bebas Neue";
-  font-size: 24px;
-  text-align: left;
-  letter-spacing: 2px;
-  margin: 0px;
-  color: #000;
-
-  :hover {
-    color: yellow;
-  }
-`;
-
-const Color = styled.span`
-  color: #e92272;
-`;
-
-const Play = styled.span`
-  color: white;
-`;
-
-const HeaderDiv = styled.div`
-  height: 800px;
-  background-color: pink;
-`;
-
-const PresentationContainer = styled.div`
-  padding-top: 50px;
-  width: 80%;
-  justify-content: center;
-  background-color: pink;
-`;
-
-const Nav = styled.div`
-  width: 100%;
-  height: 40px;
-`;
-
-const HeaderContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 50px;
-  box-sizing: border-box;
-`;
+          <Paragraph>
+            Passionate about <Color>colors</Color> & <Play>play</Play>
+          </Paragraph>
+          <LottieContainer>
+            <Lottie
+              options={{
+                animationData: animation,
+              }}
+            />
+          </LottieContainer>
+        </PresentationContainer>
+      </HeaderContainer>
+    </HeaderDiv>
+  );
+};

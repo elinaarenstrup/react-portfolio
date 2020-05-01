@@ -1,18 +1,20 @@
 import React from "react";
 import styled from "styled-components";
 
-export const Footer = () => {
-  return (
-    <FooterDiv>
-      <Text>Say Hello...</Text>
-      <Nav>
-        <Link href="https://www.linkedin.com">LinkedIn</Link>
-        <Link href="https://www.github.com">GitHub</Link>
-        <Link href="mailto:elinaarenstrup@gmail.com">Email</Link>
-      </Nav>
-    </FooterDiv>
-  );
-};
+const Nav = styled.div`
+  margin: 0;
+  width: 45%;
+  height: 40px;
+`;
+
+const FooterDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: #000;
+`;
 
 const Text = styled.h1`
   font-family: "Bebas Neue";
@@ -31,6 +33,7 @@ const Link = styled.button`
   text-transform: uppercase;
   background-color: #000;
   color: #fff;
+  cursor: pointer;
 
   :hover {
     color: yellow;
@@ -101,17 +104,15 @@ const Link = styled.button`
   }
 `;
 
-const Nav = styled.div`
-  margin: 0;
-  width: 45%;
-  height: 40px;
-`;
-
-const FooterDiv = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
-  background-color: #000;
-`;
+export const Footer = () => {
+  return (
+    <FooterDiv>
+      <Text>Say Hello...</Text>
+      <Nav>
+        <Link href="https://www.linkedin.com">LinkedIn</Link>
+        <Link href="https://www.github.com">GitHub</Link>
+        <Link href="mailto:elinaarenstrup@gmail.com">Email</Link>
+      </Nav>
+    </FooterDiv>
+  );
+};

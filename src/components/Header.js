@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components/macro";
 import Lottie from "lottie-react-web";
 import animation from "../arrow.json";
+import profilePic from "../assets/elinaarenstrup.jpg";
 
 const Presentation = styled.h2`
   font-family: "Bebas Neue";
@@ -225,6 +226,81 @@ const HeyYou = styled.h1`
   }
 `;
 
+const ProfilePic = styled.div`
+  background-image: url(${profilePic});
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 350px;
+  height: 350px;
+  border: solid 15px #000;
+
+  :hover {
+    -webkit-animation: wobble-hor-bottom 0.8s both;
+              animation: wobble-hor-bottom 0.8s both;
+
+    @-webkit-keyframes wobble-hor-bottom {
+      0%,
+      100% {
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
+        -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+      }
+      15% {
+        -webkit-transform: translateX(-30px) rotate(-6deg);
+                transform: translateX(-30px) rotate(-6deg);
+      }
+      30% {
+        -webkit-transform: translateX(15px) rotate(6deg);
+                transform: translateX(15px) rotate(6deg);
+      }
+      45% {
+        -webkit-transform: translateX(-15px) rotate(-3.6deg);
+                transform: translateX(-15px) rotate(-3.6deg);
+      }
+      60% {
+        -webkit-transform: translateX(9px) rotate(2.4deg);
+                transform: translateX(9px) rotate(2.4deg);
+      }
+      75% {
+        -webkit-transform: translateX(-6px) rotate(-1.2deg);
+                transform: translateX(-6px) rotate(-1.2deg);
+      }
+    }
+    @keyframes wobble-hor-bottom {
+      0%,
+      100% {
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
+        -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+      }
+      15% {
+        -webkit-transform: translateX(-30px) rotate(-6deg);
+                transform: translateX(-30px) rotate(-6deg);
+      }
+      30% {
+        -webkit-transform: translateX(15px) rotate(6deg);
+                transform: translateX(15px) rotate(6deg);
+      }
+      45% {
+        -webkit-transform: translateX(-15px) rotate(-3.6deg);
+                transform: translateX(-15px) rotate(-3.6deg);
+      }
+      60% {
+        -webkit-transform: translateX(9px) rotate(2.4deg);
+                transform: translateX(9px) rotate(2.4deg);
+      }
+      75% {
+        -webkit-transform: translateX(-6px) rotate(-1.2deg);
+                transform: translateX(-6px) rotate(-1.2deg);
+      }
+    }
+    
+    }
+  }
+`;
+
 export const Header = () => {
   return (
     <HeaderDiv>
@@ -238,11 +314,13 @@ export const Header = () => {
           <HeyYou>Hello you,</HeyYou>
 
           <Presentation>I'm Elin Aarenstrup.</Presentation>
+
           <Presentation2>Frontend developer / Graphic designer</Presentation2>
 
           <Paragraph>
             Passionate about <Color>colors</Color> & <Play>play</Play>
           </Paragraph>
+
           <LottieContainer>
             <Lottie
               options={{
@@ -250,6 +328,7 @@ export const Header = () => {
               }}
             />
           </LottieContainer>
+          <ProfilePic />
         </PresentationContainer>
       </HeaderContainer>
     </HeaderDiv>

@@ -42,7 +42,8 @@ const Play = styled.span`
 `;
 
 const HeaderDiv = styled.div`
-  height: 800px;
+  height: 100%;
+  padding: 100px;
   background-color: pink;
 `;
 

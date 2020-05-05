@@ -5,22 +5,22 @@ const Text = styled.h1`
   font-family: "Bebas Neue";
   font-size: 100px;
   text-align: left;
-  margin: 0 0 30px 0;
+  margin: 0 0 50px 0;
   color: #000;
 `;
 
 const TechDiv = styled.div`
-  padding: 0 100px;
+  padding: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 100%;
   background-color: yellow;
 `;
 
 const TechHeader = styled.div`
-  margin: 0 0 30px 0;
+  margin: 0;
 `;
 
 const TechGrid = styled.div`

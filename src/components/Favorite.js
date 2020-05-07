@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
+import background from "../assets/Collage.jpg";
 
 const Text2 = styled.h2`
   display: inline;
@@ -7,11 +8,11 @@ const Text2 = styled.h2`
   font-size: 72px;
   text-align: left;
   padding: 10px 30px;
-  margin: 0 0 10px 0;
+  margin: 0;
   color: #e92272;
 
   :hover {
-    color: pink;
+    color: yellow;
     -webkit-animation: shake-horizontal 0.8s
       cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
     animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955)
@@ -81,15 +82,17 @@ const Text = styled.h1`
   font-family: "Bebas Neue";
   font-size: 100px;
   text-align: left;
-  margin: 0 0 30px 0;
-  color: #000;
+  margin: 0;
+  padding: 10px 0 10px 30px;
+  color: #fff;
 `;
 
 const CaptureHeader = styled.h3`
-  font-family: "Roboto";
-  font-size: 40px;
+  font-family: "Bebas Neue";
+  font-size: 42px;
   text-align: center;
-  margin-bottom: 30px;
+  margin: 30px auto;
+  padding: 5px 15px;
   color: #000;
 `;
 
@@ -116,6 +119,9 @@ const CaptureText = styled.p`
 `;
 
 const FavDiv = styled.div`
+  background-image: url(${background});
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -126,20 +132,22 @@ const FavDiv = styled.div`
 `;
 
 const HeaderDiv = styled.div`
-  margin: 0 auto;
+  margin: 20px auto;
+  background-color: #000;
 `;
 
 const ContentContainer = styled.div`
   align-self: center;
   margin: 0;
   width: 800px;
+  background: #fff;
+  padding: 50px 20px;
 `;
 
 const ImgBox = styled.div`
   width: 800px;
   height: 500px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 0;
   background-color: yellow;
 `;
 

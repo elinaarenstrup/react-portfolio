@@ -10,7 +10,7 @@ const CardContainer = styled.div`
   background-color: #000;
 `;
 
-const ImgBox = styled.div`
+const CoverImage = styled.img`
   width: 100%;
   height: 200px;
   margin: 0 0 10px 0;
@@ -26,7 +26,7 @@ const TextContainer = styled.div`
   justify-items: center;
 `;
 
-const Boldertext = styled.h2`
+const Title = styled.h2`
   font-family: "Bebas Neue";
   font-size: 42px;
   font-weight: bolder;
@@ -35,6 +35,7 @@ const Boldertext = styled.h2`
 `;
 
 const Paragraph = styled.p`
+  margin: 0;
   display: block;
   text-align: left;
   font-family: "Roboto";
@@ -42,17 +43,21 @@ const Paragraph = styled.p`
   color: #fff;
 `;
 
-export const ProjectCard = () => {
+const Link = styled.a`
+  text-decoration: none;
+  cursor: pointer;
+`;
+
+export const ProjectCard = ({ title, paragraph, coverImage, link }) => {
   return (
-    <CardContainer>
-      <ImgBox />{" "}
-      <TextContainer>
-        <Boldertext>Title</Boldertext>
-        <Paragraph>
-          A music release page in pairs using a API, which shows new album and
-          single releases
-        </Paragraph>
-      </TextContainer>
-    </CardContainer>
+    <Link href={link} target="_blank" rel="noopener noreferrer">
+      <CardContainer>
+        {coverImage && <CoverImage src={coverImage} />}
+        <TextContainer>
+          {title && <Title>{title}</Title>}
+          {paragraph && <Paragraph>{paragraph}</Paragraph>}
+        </TextContainer>
+      </CardContainer>
+    </Link>
   );
 };

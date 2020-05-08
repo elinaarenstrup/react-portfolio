@@ -11,6 +11,10 @@ const CardContainer = styled.div`
 
   @media screen and (max-width: 600px) {
     margin-right: 0;
+  }
+
+  @media screen and (max-width: 820px) {
+    margin-right: 10px;
     margin-bottom: 10px;
   }
 `;

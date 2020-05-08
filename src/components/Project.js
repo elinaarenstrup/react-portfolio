@@ -18,7 +18,7 @@ const Title = styled.h2`
   margin-right: 10px;
   color: #000;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     font-size: 24px;
   }
 `;
@@ -31,7 +31,7 @@ const Paragraph = styled.p`
   font-size: 30px;
   color: #000;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     font-size: 18px;
   }
 `;

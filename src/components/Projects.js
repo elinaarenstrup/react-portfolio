@@ -86,7 +86,7 @@ const Text = styled.h1`
     }
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     font-size: 42px;
     margin: 0 0 20px 0;
   }
@@ -100,7 +100,7 @@ const Text2 = styled.h2`
   color: #000;
   background-color: yellow;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     margin: 20px 0;
   }
 `;
@@ -114,7 +114,7 @@ const ProjectsDiv = styled.div`
   padding: 100px;
   background-color: #fff;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     padding: 50px 20px;
   }
 `;
@@ -129,7 +129,7 @@ const OtherContainer = styled.div`
   padding: 100px 0 0 0;
   background-color: #fff;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     padding: 0;
   }
 `;
@@ -144,7 +144,7 @@ const CardDiv = styled.div`
   padding: 0 100px;
   background-color: #fff;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     padding: 0;
   }
 `;

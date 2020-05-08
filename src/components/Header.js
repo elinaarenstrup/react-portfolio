@@ -13,7 +13,7 @@ const Presentation = styled.h2`
   margin: 0 0 5px 0;
   color: #e92272;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     font-size: 60px;
   }
 `;
@@ -24,10 +24,11 @@ const Presentation2 = styled.h2`
   text-align: left;
   letter-spacing: 2px;
   line-height: 0.9;
-  margin: 0 0 100px 0;
+  margin: 0 0 50px 0;
   color: #000;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
+    margin: 0 0 100px 0;
     font-weight: lighter;
     font-size: 30px;
   }
@@ -60,7 +61,7 @@ const HeaderDiv = styled.div`
   padding: 100px;
   background-color: pink;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     height: 100%;
     padding: 10px 10px 100px 10px;
   }
@@ -70,14 +71,13 @@ const PresentationContainer = styled.div`
   padding-top: 50px;
   width: 80%;
   justify-content: center;
-  background-color: pink;
 `;
 
 const Nav = styled.div`
   width: 100%;
   height: 40px;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     display: none;
   }
 `;
@@ -91,7 +91,7 @@ const HeaderContainer = styled.div`
   padding: 50px;
   box-sizing: border-box;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     padding: 0;
   }
 `;
@@ -99,7 +99,7 @@ const HeaderContainer = styled.div`
 const LottieContainer = styled.div`
   width: 300px;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     width: 200px;
   }
 `;
@@ -183,7 +183,7 @@ const Link = styled.button`
     }
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     display: none;
   }
 `;
@@ -194,7 +194,7 @@ const HeyYou = styled.h1`
   line-height: 0.8;
   letter-spacing: 5px;
   text-align: left;
-  margin: 0 0 100px 0;
+  margin: 100px 0 100px 0;
   color: #000;
 
   :hover {
@@ -260,6 +260,9 @@ const HeyYou = styled.h1`
       }
     }
   }
+  @media screen and (max-width: 820px) {
+    margin: 0 0 100px 0;
+  }
 `;
 
 const ProfilePic = styled.div`
@@ -271,7 +274,7 @@ const ProfilePic = styled.div`
   border: solid 15px #000;
   box-shadow: 30px 30px yellow;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     width: 200px;
     height: 200px;
     border: solid 10px #000;

@@ -75,7 +75,7 @@ const Text2 = styled.h2`
     }
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     font-size: 24px;
     padding: 5px;
     margin: 0 0 10px 0;
@@ -90,7 +90,7 @@ const Text = styled.h1`
   margin: 0 0 30px 0;
   color: #000;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     font-size: 42px;
     padding: px;
     margin: 0 0 10px 0;

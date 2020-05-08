@@ -76,7 +76,7 @@ const Text2 = styled.h2`
     }
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     font-size: 24px;
     margin: 0;
     padding: 0;
@@ -91,7 +91,7 @@ const Text = styled.h1`
   color: #000;
   display: inline;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     font-size: 42px;
     margin: 0 0 5px 0;
   }
@@ -106,7 +106,7 @@ const ThoughtsDiv = styled.div`
   height: 100%;
   background-color: #f1f1f1;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     padding: 20px;
   }
 `;
@@ -118,7 +118,7 @@ const ThoughtsContainer = styled.div`
   background: #fff;
   padding: 50px 20px;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     width: 80%;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -129,7 +129,7 @@ const ThoughtsContainer = styled.div`
 const HeaderContainer = styled.div`
   margin: 100px 0 30px 0;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     margin: 50px 0 20px 0;
   }
 `;
@@ -149,7 +149,7 @@ const Paragraph = styled.p`
   font-size: 30px;
   color: #000;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     font-size: 18px;
   }
 `;
@@ -163,6 +163,10 @@ const ImgBox = styled.div`
   @media screen and (max-width: 600px) {
     width: 100%;
     height: 300px;
+  }
+
+  @media screen and (max-width: 820px) {
+    width: 100%;
   }
 `;
 
@@ -181,7 +185,7 @@ const Link = styled.a`
     color: #e92272;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     font-size: 18px;
     padding-right: 10px;
   }
@@ -190,7 +194,7 @@ const Link = styled.a`
 const OtherThoughts = styled.div`
   margin: 30px 0 0 0;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     margin: 0;
   }
 `;

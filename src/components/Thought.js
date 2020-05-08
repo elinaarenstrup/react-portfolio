@@ -19,7 +19,7 @@ const Title = styled.h2`
   margin-right: 10px;
   color: #000;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     font-size: 24px;
     margin-right: 5px;
   }
@@ -39,7 +39,7 @@ const Paragraph = styled.p`
     background-color: pink;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     font-size: 18px;
     padding: 5px 10px;
   }

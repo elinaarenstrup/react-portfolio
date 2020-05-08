@@ -76,7 +76,7 @@ const Text2 = styled.h2`
     }
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     font-size: 24px;
     padding: 5px 10px;
   }
@@ -91,7 +91,7 @@ const Text = styled.h1`
   padding: 10px 0 10px 30px;
   color: #fff;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     font-size: 42px;
     padding: 5px 0 5px 10px;
   }
@@ -105,7 +105,7 @@ const CaptureHeader = styled.h3`
   padding: 5px 15px;
   color: #000;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     font-size: 24px;
     margin: 10px auto;
     padding: 5px 10px;
@@ -126,7 +126,7 @@ const TechText = styled.p`
     color: #000;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     font-size: 14px;
   }
 `;
@@ -137,7 +137,7 @@ const CaptureText = styled.p`
   font-size: 30px;
   color: #000;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     margin: 0 0 20px 0;
     font-size: 18px;
   }
@@ -155,7 +155,7 @@ const FavDiv = styled.div`
   height: 100%;
   background-color: #fff;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     padding: 50px 20px;
   }
 `;
@@ -164,7 +164,7 @@ const HeaderDiv = styled.div`
   margin: 20px auto;
   background-color: #000;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     margin: 0;
   }
 `;
@@ -176,7 +176,7 @@ const ContentContainer = styled.div`
   background: #fff;
   padding: 50px 20px;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     width: 80%;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -190,7 +190,7 @@ const ImgBox = styled.div`
   margin: 0;
   background-color: yellow;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     width: 100%;
     height: 300px;
   }

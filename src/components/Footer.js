@@ -6,20 +6,20 @@ const Nav = styled.div`
   width: 45%;
   height: 40px;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     width: 100%;
   }
 `;
 
 const FooterDiv = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 300px;
   background-color: #000;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     flex-direction: column;
   }
 `;
@@ -31,7 +31,7 @@ const Text = styled.h1`
   margin: 0 0 30px 0;
   color: #fff;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     font-size: 52px;
   }
 `;
@@ -114,7 +114,7 @@ const Link = styled.button`
       }
     }
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     font-size: 18px;
   }
 `;

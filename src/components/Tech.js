@@ -8,7 +8,7 @@ const Text = styled.h1`
   margin: 0 0 50px 0;
   color: #000;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     font-size: 42px;
     margin: 0 0 20px;
   }
@@ -23,7 +23,7 @@ const TechDiv = styled.div`
   height: 100%;
   background-color: yellow;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     padding: 50px 20px;
   }
 `;
@@ -54,7 +54,7 @@ const TechText = styled.p`
     color: #000;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 820px) {
     font-size: 20px;
   }
 `;

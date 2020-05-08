@@ -8,6 +8,11 @@ const CardContainer = styled.div`
   margin-bottom: 20px;
   border: 10px solid #000;
   background-color: #000;
+
+  @media screen and (max-width: 600px) {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 `;
 
 const CoverImage = styled.img`
@@ -39,7 +44,7 @@ const Paragraph = styled.p`
   display: block;
   text-align: left;
   font-family: "Roboto";
-  font-size: 14px;
+  font-size: 18px;
   color: #fff;
 `;
 

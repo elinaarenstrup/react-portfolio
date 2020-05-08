@@ -8,8 +8,14 @@ const Presentation = styled.h2`
   font-family: "Bebas Neue";
   font-size: 72px;
   text-align: left;
-  margin: 0 0 10px 0;
+  letter-spacing: 2px;
+  line-height: 0.9;
+  margin: 0 0 5px 0;
   color: #e92272;
+
+  @media screen and (max-width: 600px) {
+    font-size: 60px;
+  }
 `;
 
 const Presentation2 = styled.h2`
@@ -17,16 +23,23 @@ const Presentation2 = styled.h2`
   font-size: 24px;
   text-align: left;
   letter-spacing: 2px;
-  margin: 0 0 5px 0;
+  line-height: 0.9;
+  margin: 0 0 100px 0;
   color: #000;
+
+  @media screen and (max-width: 600px) {
+    font-weight: lighter;
+    font-size: 30px;
+  }
 `;
 
 const Paragraph = styled.h2`
   font-family: "Bebas Neue";
-  font-size: 24px;
+  font-size: 42px;
   text-align: left;
   letter-spacing: 2px;
-  margin: 0px;
+  line-height: 0.9;
+  margin: 0 0 30px 0;
   color: #000;
 
   :hover {
@@ -46,6 +59,11 @@ const HeaderDiv = styled.div`
   height: 100%;
   padding: 100px;
   background-color: pink;
+
+  @media screen and (max-width: 600px) {
+    height: 100%;
+    padding: 10px 10px 100px 10px;
+  }
 `;
 
 const PresentationContainer = styled.div`
@@ -58,6 +76,10 @@ const PresentationContainer = styled.div`
 const Nav = styled.div`
   width: 100%;
   height: 40px;
+
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 `;
 
 const HeaderContainer = styled.div`
@@ -68,10 +90,18 @@ const HeaderContainer = styled.div`
   width: 100%;
   padding: 50px;
   box-sizing: border-box;
+
+  @media screen and (max-width: 600px) {
+    padding: 0;
+  }
 `;
 
 const LottieContainer = styled.div`
   width: 300px;
+
+  @media screen and (max-width: 600px) {
+    width: 200px;
+  }
 `;
 
 const Link = styled.button`
@@ -152,13 +182,19 @@ const Link = styled.button`
       }
     }
   }
+
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 `;
 
 const HeyYou = styled.h1`
   font-family: "Bebas Neue";
-  font-size: 100px;
+  font-size: 120px;
+  line-height: 0.8;
+  letter-spacing: 5px;
   text-align: left;
-  margin: 0 0 30px 0;
+  margin: 0 0 100px 0;
   color: #000;
 
   :hover {
@@ -234,6 +270,13 @@ const ProfilePic = styled.div`
   height: 350px;
   border: solid 15px #000;
   box-shadow: 30px 30px yellow;
+
+  @media screen and (max-width: 600px) {
+    width: 200px;
+    height: 200px;
+    border: solid 10px #000;
+    box-shadow: 20px 20px yellow;
+  }
 `;
 
 export const Header = () => {

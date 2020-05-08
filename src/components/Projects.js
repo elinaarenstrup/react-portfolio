@@ -85,6 +85,11 @@ const Text = styled.h1`
       }
     }
   }
+
+  @media screen and (max-width: 600px) {
+    font-size: 42px;
+    margin: 0 0 20px 0;
+  }
 `;
 
 const Text2 = styled.h2`
@@ -94,6 +99,10 @@ const Text2 = styled.h2`
   padding: 5px 15px;
   color: #000;
   background-color: yellow;
+
+  @media screen and (max-width: 600px) {
+    margin: 20px 0;
+  }
 `;
 
 const ProjectsDiv = styled.div`
@@ -104,6 +113,10 @@ const ProjectsDiv = styled.div`
   height: 100%;
   padding: 100px;
   background-color: #fff;
+
+  @media screen and (max-width: 600px) {
+    padding: 50px 20px;
+  }
 `;
 
 const OtherContainer = styled.div`
@@ -115,6 +128,10 @@ const OtherContainer = styled.div`
   height: 100%;
   padding: 100px 0 0 0;
   background-color: #fff;
+
+  @media screen and (max-width: 600px) {
+    padding: 0;
+  }
 `;
 
 const CardDiv = styled.div`
@@ -126,6 +143,10 @@ const CardDiv = styled.div`
   height: 100%;
   padding: 0 100px;
   background-color: #fff;
+
+  @media screen and (max-width: 600px) {
+    padding: 0;
+  }
 `;
 
 export const Projects = () => {
@@ -142,6 +163,16 @@ export const Projects = () => {
         <ProjectCard
           coverImage="https://images.unsplash.com/photo-1588871315923-90892643f48b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80"
           title="This is another title"
+          paragraph="bla bla bla bla bla..."
+        />
+        <ProjectCard
+          coverImage="https://images.unsplash.com/photo-1588871315923-90892643f48b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80"
+          title="This is a third"
+          paragraph="bla bla bla bla bla..."
+        />
+        <ProjectCard
+          coverImage="https://images.unsplash.com/photo-1588871315923-90892643f48b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80"
+          title="This is the 4th..."
           paragraph="bla bla bla bla bla..."
         />
       </CardDiv>

@@ -11,13 +11,18 @@ const TextContainer = styled.div`
 
 const Title = styled.h2`
   margin: auto;
-  padding: 5px 0;
+  padding: 5px;
   display: inline;
   font-family: "Bebas Neue";
   font-size: 42px;
   font-weight: bolder;
   margin-right: 10px;
   color: #000;
+
+  @media screen and (max-width: 600px) {
+    font-size: 24px;
+    margin-right: 5px;
+  }
 `;
 
 const Paragraph = styled.p`
@@ -32,6 +37,11 @@ const Paragraph = styled.p`
 
   :hover {
     background-color: pink;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 18px;
+    padding: 5px 10px;
   }
 `;
 

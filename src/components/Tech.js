@@ -7,6 +7,11 @@ const Text = styled.h1`
   text-align: left;
   margin: 0 0 50px 0;
   color: #000;
+
+  @media screen and (max-width: 600px) {
+    font-size: 42px;
+    margin: 0 0 20px;
+  }
 `;
 
 const TechDiv = styled.div`
@@ -17,6 +22,10 @@ const TechDiv = styled.div`
   align-items: center;
   height: 100%;
   background-color: yellow;
+
+  @media screen and (max-width: 600px) {
+    padding: 50px 20px;
+  }
 `;
 
 const TechHeader = styled.div`
@@ -43,6 +52,10 @@ const TechText = styled.p`
   :hover {
     background-color: #e92272;
     color: #000;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 20px;
   }
 `;
 

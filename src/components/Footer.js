@@ -5,15 +5,23 @@ const Nav = styled.div`
   margin: 0;
   width: 45%;
   height: 40px;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
 const FooterDiv = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 300px;
   background-color: #000;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
 `;
 
 const Text = styled.h1`
@@ -22,6 +30,10 @@ const Text = styled.h1`
   text-align: left;
   margin: 0 0 30px 0;
   color: #fff;
+
+  @media screen and (max-width: 600px) {
+    font-size: 52px;
+  }
 `;
 
 const Link = styled.button`
@@ -101,6 +113,9 @@ const Link = styled.button`
         transform: scale3d(1, 1, 1);
       }
     }
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 18px;
   }
 `;
 

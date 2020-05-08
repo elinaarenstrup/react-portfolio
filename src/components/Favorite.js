@@ -75,6 +75,11 @@ const Text2 = styled.h2`
       }
     }
   }
+
+  @media screen and (max-width: 600px) {
+    font-size: 24px;
+    padding: 5px 10px;
+  }
 `;
 
 const Text = styled.h1`
@@ -85,6 +90,11 @@ const Text = styled.h1`
   margin: 0;
   padding: 10px 0 10px 30px;
   color: #fff;
+
+  @media screen and (max-width: 600px) {
+    font-size: 42px;
+    padding: 5px 0 5px 10px;
+  }
 `;
 
 const CaptureHeader = styled.h3`
@@ -94,6 +104,12 @@ const CaptureHeader = styled.h3`
   margin: 30px auto;
   padding: 5px 15px;
   color: #000;
+
+  @media screen and (max-width: 600px) {
+    font-size: 24px;
+    margin: 10px auto;
+    padding: 5px 10px;
+  }
 `;
 
 const TechText = styled.p`
@@ -109,6 +125,10 @@ const TechText = styled.p`
     background-color: #e92272;
     color: #000;
   }
+
+  @media screen and (max-width: 600px) {
+    font-size: 14px;
+  }
 `;
 
 const CaptureText = styled.p`
@@ -116,6 +136,11 @@ const CaptureText = styled.p`
   font-family: "Roboto";
   font-size: 30px;
   color: #000;
+
+  @media screen and (max-width: 600px) {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+  }
 `;
 
 const FavDiv = styled.div`
@@ -129,11 +154,19 @@ const FavDiv = styled.div`
   padding: 100px;
   height: 100%;
   background-color: #fff;
+
+  @media screen and (max-width: 600px) {
+    padding: 50px 20px;
+  }
 `;
 
 const HeaderDiv = styled.div`
   margin: 20px auto;
   background-color: #000;
+
+  @media screen and (max-width: 600px) {
+    margin: 0;
+  }
 `;
 
 const ContentContainer = styled.div`
@@ -142,6 +175,13 @@ const ContentContainer = styled.div`
   width: 800px;
   background: #fff;
   padding: 50px 20px;
+
+  @media screen and (max-width: 600px) {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
 `;
 
 const ImgBox = styled.div`
@@ -149,6 +189,11 @@ const ImgBox = styled.div`
   height: 500px;
   margin: 0;
   background-color: yellow;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    height: 300px;
+  }
 `;
 
 export const Favorite = () => {

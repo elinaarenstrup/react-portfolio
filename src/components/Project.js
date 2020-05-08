@@ -17,6 +17,10 @@ const Title = styled.h2`
   font-weight: bolder;
   margin-right: 10px;
   color: #000;
+
+  @media screen and (max-width: 600px) {
+    font-size: 24px;
+  }
 `;
 
 const Paragraph = styled.p`
@@ -26,6 +30,10 @@ const Paragraph = styled.p`
   font-family: "Roboto";
   font-size: 30px;
   color: #000;
+
+  @media screen and (max-width: 600px) {
+    font-size: 18px;
+  }
 `;
 
 const Link = styled.a`

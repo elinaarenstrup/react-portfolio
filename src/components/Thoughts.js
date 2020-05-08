@@ -75,6 +75,12 @@ const Text2 = styled.h2`
       }
     }
   }
+
+  @media screen and (max-width: 600px) {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+  }
 `;
 
 const Text = styled.h1`
@@ -84,6 +90,11 @@ const Text = styled.h1`
   margin: 0 0 30px 0;
   color: #000;
   display: inline;
+
+  @media screen and (max-width: 600px) {
+    font-size: 42px;
+    margin: 0 0 5px 0;
+  }
 `;
 
 const ThoughtsDiv = styled.div`
@@ -94,6 +105,10 @@ const ThoughtsDiv = styled.div`
   padding-bottom: 100px;
   height: 100%;
   background-color: #f1f1f1;
+
+  @media screen and (max-width: 600px) {
+    padding: 20px;
+  }
 `;
 
 const ThoughtsContainer = styled.div`
@@ -102,10 +117,21 @@ const ThoughtsContainer = styled.div`
   width: 800px;
   background: #fff;
   padding: 50px 20px;
+
+  @media screen and (max-width: 600px) {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
 `;
 
 const HeaderContainer = styled.div`
   margin: 100px 0 30px 0;
+
+  @media screen and (max-width: 600px) {
+    margin: 50px 0 20px 0;
+  }
 `;
 
 const Headline = styled.h3`
@@ -122,6 +148,10 @@ const Paragraph = styled.p`
   font-family: "Roboto";
   font-size: 30px;
   color: #000;
+
+  @media screen and (max-width: 600px) {
+    font-size: 18px;
+  }
 `;
 
 const ImgBox = styled.div`
@@ -129,6 +159,11 @@ const ImgBox = styled.div`
   height: 500px;
   margin: 0;
   background-color: #e92272;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    height: 300px;
+  }
 `;
 
 const Link = styled.a`
@@ -145,10 +180,19 @@ const Link = styled.a`
   :hover {
     color: #e92272;
   }
+
+  @media screen and (max-width: 600px) {
+    font-size: 18px;
+    padding-right: 10px;
+  }
 `;
 
 const OtherThoughts = styled.div`
   margin: 30px 0 0 0;
+
+  @media screen and (max-width: 600px) {
+    margin: 0;
+  }
 `;
 
 export const Thoughts = () => {

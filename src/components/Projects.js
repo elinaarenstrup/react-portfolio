@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 import { ProjectCard } from "./ProjectCard";
+import { ProjectText } from "./Project";
 
 const Text = styled.h1`
   font-family: "Bebas Neue";
@@ -95,40 +96,6 @@ const Text2 = styled.h2`
   background-color: yellow;
 `;
 
-const Paragraph = styled.p`
-  margin: 0 auto 30px;
-  display: block;
-  text-align: left;
-  font-family: "Roboto";
-  font-size: 30px;
-  color: #000;
-`;
-
-const BolderText = styled.h2`
-  display: inline;
-  font-family: "Bebas Neue";
-  font-size: 42px;
-  font-weight: bolder;
-  text-align: center;
-  color: #000;
-`;
-
-const Link = styled.a`
-  display: inline;
-  font-family: "Roboto";
-  font-size: 30px;
-  font-weight: bolder;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 30px;
-  color: #000;
-  cursor: pointer;
-
-  :hover {
-    color: yellow;
-  }
-`;
-
 const ProjectsDiv = styled.div`
   display: flex;
   flex-direction: column;
@@ -144,6 +111,7 @@ const OtherContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   height: 100%;
   padding: 100px 0 0 0;
   background-color: #fff;
@@ -179,30 +147,16 @@ export const Projects = () => {
       </CardDiv>
       <OtherContainer>
         <Text2>Other projects</Text2>
-        <Paragraph>
-          <BolderText>Title </BolderText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua
-          <Link>...</Link>
-        </Paragraph>
-        <Paragraph>
-          <BolderText>News site </BolderText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua
-          <Link>...</Link>
-        </Paragraph>
-        <Paragraph>
-          <BolderText>News site </BolderText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua
-          <Link>...</Link>
-        </Paragraph>
-        <Paragraph>
-          <BolderText>News site </BolderText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua
-          <Link>...</Link>
-        </Paragraph>
+        <ProjectText
+          title="Title"
+          paragraph="Description of the project..."
+          link="https://images.unsplash.com/photo-1588871315923-90892643f48b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80"
+        />
+        <ProjectText
+          title="Title 2"
+          paragraph="Description of the project..."
+          link="https://images.unsplash.com/photo-1588871315923-90892643f48b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80"
+        />
       </OtherContainer>
     </ProjectsDiv>
   );

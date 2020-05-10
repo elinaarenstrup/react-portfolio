@@ -23,7 +23,6 @@ const CoverImage = styled.img`
   width: 100%;
   height: 200px;
   margin: 0 0 10px 0;
-  background-color: yellow;
 `;
 
 const TextContainer = styled.div`
@@ -31,8 +30,8 @@ const TextContainer = styled.div`
   display: flex;
   padding: 0 20px;
   flex-direction: column;
-  align-items: center;
-  justify-items: center;
+  align-items: left;
+  justify-items: left;
 `;
 
 const Title = styled.h2`
@@ -45,8 +44,6 @@ const Title = styled.h2`
 
 const Paragraph = styled.p`
   margin: 0;
-  display: block;
-  text-align: left;
   font-family: "Roboto";
   font-size: 18px;
   color: #fff;

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 import background from "../assets/Collage.jpg";
+import todo from "../assets/Todo.png";
 
 const Text2 = styled.h2`
   display: inline;
@@ -127,7 +128,7 @@ const TechText = styled.p`
   }
 
   @media screen and (max-width: 820px) {
-    font-size: 14px;
+    font-size: 20px;
   }
 `;
 
@@ -185,6 +186,9 @@ const ContentContainer = styled.div`
 `;
 
 const ImgBox = styled.div`
+  background-image: url(${todo});
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 800px;
   height: 500px;
   margin: 0;
@@ -207,16 +211,14 @@ export const Favorite = () => {
         <ImgBox />
         <CaptureHeader>Todo App</CaptureHeader>
         <CaptureText>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum."
+          A todo app made using React Redux. Thoughts can be added, marked as
+          completed and removed from the list.
         </CaptureText>
         <TechText>React</TechText>
+        <TechText>Redux</TechText>
+        <TechText>Redux toolkit</TechText>
         <TechText>JSX</TechText>
+        <TechText>Styled components</TechText>
       </ContentContainer>
     </FavDiv>
   );

@@ -2,6 +2,10 @@ import React from "react";
 import styled from "styled-components/macro";
 import { ProjectCard } from "./ProjectCard";
 import { ProjectText } from "./Project";
+import happy from "../assets/Happy.png";
+import foodquiz from "../assets/Foodquiz.png";
+import movies from "../assets/Movies.png";
+import weather from "../assets/Weather.png";
 
 const Text = styled.h1`
   font-family: "Bebas Neue";
@@ -155,38 +159,56 @@ export const Projects = () => {
       <Text>Featured projects</Text>
       <CardDiv>
         <ProjectCard
-          coverImage="https://images.unsplash.com/photo-1588871315923-90892643f48b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80"
-          title="This is a title"
-          paragraph="bla bla bla bla bla"
-          link="https://github.com/elinaarenstrup/react-portfolio"
+          coverImage={happy}
+          title="Happy thoughts"
+          paragraph="A twitter-like app, but only for the good stuff..."
+          link="https://github.com/elinaarenstrup/project-happy-thoughts"
         />
         <ProjectCard
-          coverImage="https://images.unsplash.com/photo-1588871315923-90892643f48b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80"
-          title="This is another title"
-          paragraph="bla bla bla bla bla..."
+          coverImage={weather}
+          title="Weather app"
+          paragraph="A weather app to display the weather based on a location using Open weather maps API...."
+          link="https://github.com/elinaarenstrup/project-weather-app"
         />
         <ProjectCard
-          coverImage="https://images.unsplash.com/photo-1588871315923-90892643f48b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80"
-          title="This is a third"
-          paragraph="bla bla bla bla bla..."
+          coverImage={movies}
+          title="Movie rating"
+          paragraph="Filter the latest movies on based on rating, multipage app using React router..."
+          link="https://github.com/elinaarenstrup/project-movies"
         />
         <ProjectCard
-          coverImage="https://images.unsplash.com/photo-1588871315923-90892643f48b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80"
-          title="This is the 4th..."
-          paragraph="bla bla bla bla bla..."
+          coverImage={foodquiz}
+          title="Food quiz"
+          paragraph="A fun little quiz game made with Redux..."
+          link="https://github.com/elinaarenstrup/project-redux-quiz-hippos"
         />
       </CardDiv>
       <OtherContainer>
         <Text2>Other projects</Text2>
         <ProjectText
-          title="Title"
-          paragraph="Description of the project..."
-          link="https://images.unsplash.com/photo-1588871315923-90892643f48b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80"
+          title="Food scanner"
+          paragraph="An app that scans barcodes on food packages to retrieve the product name and ingredients...."
+          link="https://github.com/elinaarenstrup/project-nutrition"
         />
         <ProjectText
-          title="Title 2"
-          paragraph="Description of the project..."
-          link="https://images.unsplash.com/photo-1588871315923-90892643f48b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80"
+          title="Rick & Morty quotes on life"
+          paragraph="A random quote generator mad with React native that makes your phone vibrate when clicking the button...."
+          link="https://github.com/elinaarenstrup/project-react-native-app"
+        />
+        <ProjectText
+          title="Tic-tac-toe game"
+          paragraph="A tic-tac-toe game to lear Redux..."
+          link="https://github.com/elinaarenstrup/tic-tac-toe-redux-codealong"
+        />
+        <ProjectText
+          title="Business site"
+          paragraph="Cool site with hero-video, sign-up form & a accordion..."
+          link="https://github.com/elinaarenstrup/project-business-site"
+        />
+        <ProjectText
+          title="Swedish fika-survey"
+          paragraph="Small survey that displays a summary of your fika prefs..."
+          link="https://github.com/elinaarenstrup/project-survey"
         />
       </OtherContainer>
     </ProjectsDiv>

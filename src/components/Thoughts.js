@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 import { ThoughtText } from "./Thought";
+import techhorse from "../assets/Crazytechhorse.jpeg";
 
 const Text2 = styled.h2`
   font-family: "Bebas Neue";
@@ -155,6 +156,10 @@ const Paragraph = styled.p`
 `;
 
 const ImgBox = styled.div`
+  background-image: url(${techhorse});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 800px;
   height: 500px;
   margin: 0;
@@ -172,7 +177,7 @@ const ImgBox = styled.div`
 
 const Link = styled.a`
   display: block;
-  font-family: "Roboto";
+  font-family: "Bebas Neue";
   font-size: 24px;
   color: #000;
   padding-right: 50px;
@@ -210,31 +215,34 @@ export const Thoughts = () => {
         <ImgBox />
         <Headline>Have you ever heard of a crazy Tech-horse?</Headline>
         <Paragraph>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum."
+          "So I’m on week 17 of 24, and that’s just insane! 4 of 6 sprints are
+          done! It feels like it was yesterday I was in Stockholm for the first
+          meet-up and met my team for the first time (GO HIPPOS!). I never
+          thought that this Bootcamp thing was going to be so hard, but it sure
+          is! It’s hard, intense and so much fun. I’ve grown so much since
+          January and I can’t believe how much I’ve learnt in such a short
+          time."
         </Paragraph>
-        <Link href="">Read more...</Link>
+        <Link
+          href="https://www.linkedin.com/pulse/ever-heard-crazy-tech-horse-elin-aarenstrup/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Read more...
+        </Link>
       </ThoughtsContainer>
       <OtherThoughts>
         <ThoughtText
-          title="Title"
-          paragraph="Description of thoughts..."
-          link=""
+          title="Tips on remote work"
+          link="https://www.linkedin.com/pulse/stay-productive-when-working-remote-elin-aarenstrup/"
         />
         <ThoughtText
-          title="Title 2"
-          paragraph="Description of thoughts..."
-          link=""
+          title="Dude, I have no clue"
+          link="https://www.linkedin.com/pulse/dude-i-have-clue-bootcamp-pt1-elin-aarenstrup/"
         />
         <ThoughtText
-          title="Title 3"
-          paragraph="Description of thoughts..."
-          link=""
+          title="Good talk on imposter syndrome"
+          link="https://www.youtube.com/watch?v=ZkwqZfvbdFw&feature=share"
         />
       </OtherThoughts>
     </ThoughtsDiv>

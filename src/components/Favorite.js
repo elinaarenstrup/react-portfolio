@@ -118,17 +118,18 @@ const TechText = styled.p`
   font-family: "Bebas Neue";
   font-size: 30px;
   margin: 5px;
-  padding: 5px 15px;
   background-color: #000;
   color: #fff;
 
   :hover {
     background-color: #e92272;
-    color: #000;
+    color: #fff;
   }
 
   @media screen and (max-width: 820px) {
-    font-size: 20px;
+    font-size: 10px;
+    margin: 2px;
+    padding: 2px 5px;
   }
 `;
 
@@ -174,6 +175,7 @@ const ContentContainer = styled.div`
   align-self: center;
   margin: 0;
   width: 800px;
+  height: 100%;
   background: #fff;
   padding: 50px 20px;
 
@@ -185,14 +187,16 @@ const ContentContainer = styled.div`
   }
 `;
 
+//video istället kanske?
 const ImgBox = styled.div`
   background-image: url(${todo});
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 800px;
   height: 500px;
   margin: 0;
-  background-color: yellow;
+  background-color: #000;
 
   @media screen and (max-width: 820px) {
     width: 100%;

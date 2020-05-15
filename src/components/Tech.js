@@ -51,7 +51,7 @@ const TechText = styled.p`
 
   :hover {
     background-color: #e92272;
-    color: #000;
+    color: #fff;
   }
 
   @media screen and (max-width: 820px) {

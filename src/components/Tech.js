@@ -34,11 +34,15 @@ const TechHeader = styled.div`
 
 const TechGrid = styled.div`
   margin: 0;
-  width: 100%;
+  width: 800px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 820px) {
+    width: 100%;
+  }
 `;
 
 const TechText = styled.p`

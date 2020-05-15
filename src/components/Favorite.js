@@ -78,7 +78,7 @@ const Text2 = styled.h2`
   }
 
   @media screen and (max-width: 820px) {
-    font-size: 24px;
+    font-size: 30px;
     padding: 5px 10px;
   }
 `;
@@ -107,7 +107,7 @@ const CaptureHeader = styled.h3`
   color: #000;
 
   @media screen and (max-width: 820px) {
-    font-size: 24px;
+    font-size: 30px;
     margin: 10px auto;
     padding: 5px 10px;
   }
@@ -118,13 +118,9 @@ const TechText = styled.p`
   font-family: "Bebas Neue";
   font-size: 30px;
   margin: 5px;
-  background-color: #000;
+  padding: 5px 15px;
+  background-color: #e92272;
   color: #fff;
-
-  :hover {
-    background-color: #e92272;
-    color: #fff;
-  }
 
   @media screen and (max-width: 820px) {
     font-size: 10px;

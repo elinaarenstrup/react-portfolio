@@ -105,6 +105,7 @@ const Text2 = styled.h2`
   background-color: yellow;
 
   @media screen and (max-width: 820px) {
+    font-size: 30px;
     margin: 20px 0;
   }
 `;
@@ -128,12 +129,13 @@ const OtherContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 800px;
   height: 100%;
   padding: 100px 0 0 0;
   background-color: #fff;
 
   @media screen and (max-width: 820px) {
+    width: 100%;
     padding: 0;
   }
 `;

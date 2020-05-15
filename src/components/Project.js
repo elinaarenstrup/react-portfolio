@@ -5,8 +5,8 @@ const Title = styled.h2`
   margin: auto;
   margin-bottom: 5px;
   font-family: "Bebas Neue";
-  font-size: 30px;
-  font-weight: bolder;
+  font-size: 42px;
+  font-weight: normal;
 
   color: #000;
 
@@ -35,7 +35,7 @@ const Link = styled.a`
 export const ProjectText = ({ title, paragraph, link }) => {
   return (
     <Link href={link} target="_blank" rel="noopener noreferrer">
-      {title && <Title>{title}</Title>}
+      {title && <Title>✘ {title}</Title>}
       {paragraph && <Paragraph>{paragraph}</Paragraph>}
     </Link>
   );

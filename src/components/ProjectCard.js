@@ -40,6 +40,10 @@ const Title = styled.h2`
   font-weight: bolder;
   margin: 10px auto;
   color: #fff;
+
+  @media screen and (max-width: 820px) {
+    font-size: 30px;
+  }
 `;
 
 const Paragraph = styled.p`

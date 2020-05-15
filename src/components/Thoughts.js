@@ -78,7 +78,7 @@ const Text2 = styled.h2`
   }
 
   @media screen and (max-width: 820px) {
-    font-size: 24px;
+    font-size: 30px;
     margin: 0;
     padding: 0;
   }
@@ -142,6 +142,10 @@ const Headline = styled.h3`
   margin: 30px auto;
   padding: 5px 15px;
   color: #000;
+
+  @media screen and (max-width: 820px) {
+    font-size: 30px;
+  }
 `;
 
 const Paragraph = styled.p`
@@ -178,7 +182,7 @@ const ImgBox = styled.div`
 const Link = styled.a`
   display: block;
   font-family: "Bebas Neue";
-  font-size: 24px;
+  font-size: 42px;
   color: #000;
   padding-right: 50px;
   text-align: right;

@@ -116,7 +116,7 @@ const ProjectsDiv = styled.div`
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 100px;
+  padding: 100px 20px;
   background-color: #fff;
 
   @media screen and (max-width: 820px) {
@@ -147,7 +147,6 @@ const CardDiv = styled.div`
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 0 100px;
   background-color: #fff;
 
   @media screen and (max-width: 820px) {

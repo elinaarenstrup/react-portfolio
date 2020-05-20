@@ -104,12 +104,17 @@ const LottieContainer = styled.div`
   }
 `;
 
-const Link = styled.button`
+const Link = styled.a`
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
   font-family: "Roboto";
   font-size: 24px;
   margin: 0 20px;
   border: 0;
   border-bottom: 2px solid #e92272;
+  text-decoration: none;
   text-transform: uppercase;
   background-color: pink;
   color: #000;
@@ -287,9 +292,27 @@ export const Header = () => {
     <HeaderDiv>
       <HeaderContainer>
         <Nav>
-          <Link href="https://www.linkedin.com">LinkedIn</Link>
-          <Link href="https://www.github.com">GitHub</Link>
-          <Link href="mailto:elinaarenstrup@gmail.com">Email</Link>
+          <Link
+            href="https://www.linkedin.com/in/elin-aarenstrup/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </Link>
+          <Link
+            href="https://github.com/elinaarenstrup"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </Link>
+          <Link
+            href="mailto:elinaarenstrup@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Email
+          </Link>
         </Nav>
         <PresentationContainer>
           <HeyYou>Hello you,</HeyYou>

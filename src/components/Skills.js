@@ -112,6 +112,53 @@ const HeaderContainer = styled.div`
   margin: 0;
 `;
 
+const SkillsContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: top;
+  width: 100%;
+`;
+
+const GreyDiv = styled.div`
+  margin: 10px;
+  width: 20%;
+  padding: 20px;
+  background-color: #f1f1f1;
+`;
+
+const WhiteDiv = styled.div`
+  margin: 10px;
+  width: 20%;
+  padding: 20px;
+  background-color: pink;
+`;
+
+const Headline = styled.h3`
+  font-family: "Bebas Neue";
+  font-size: 42px;
+  text-align: center;
+  margin: 30px auto;
+  padding: 5px 15px;
+  color: #000;
+
+  @media screen and (max-width: 820px) {
+    font-size: 30px;
+  }
+`;
+
+const Paragraph = styled.p`
+  display: block;
+  font-family: "Roboto";
+  font-size: 24px;
+  color: #000;
+
+  @media screen and (max-width: 820px) {
+    font-size: 18px;
+  }
+`;
+
 export const Skills = () => {
   return (
     <SkillsDiv>
@@ -119,6 +166,40 @@ export const Skills = () => {
         <Text>Tech &</Text>
         <Text2>skills</Text2>
       </HeaderContainer>
+      <SkillsContainer>
+        <GreyDiv>
+          <Headline>CODE</Headline>
+          <Paragraph>GitHub</Paragraph>
+          <Paragraph>CSS3</Paragraph>
+          <Paragraph>HTML5</Paragraph>
+          <Paragraph>Javascript ES6</Paragraph>
+        </GreyDiv>
+        <WhiteDiv>
+          <Headline>TOOLBOX</Headline>
+          <Paragraph>Slack</Paragraph>
+          <Paragraph>Github</Paragraph>
+          <Paragraph>Mob/pair programming</Paragraph>
+          <Paragraph>Photoshop</Paragraph>
+          <Paragraph>Illustrator</Paragraph>
+          <Paragraph>Visual Studio Code</Paragraph>
+        </WhiteDiv>
+
+        <GreyDiv>
+          <Headline>MORE</Headline>
+          <Paragraph>API:s</Paragraph>
+          <Paragraph>Branding</Paragraph>
+          <Paragraph>Strategy</Paragraph>
+          <Paragraph>Web Accessibly</Paragraph>
+          <Paragraph>Agile methodology</Paragraph>
+          <Paragraph>Graphic design</Paragraph>
+        </GreyDiv>
+
+        <WhiteDiv>
+          <Headline>UPCOMING</Headline>
+          <Paragraph>React</Paragraph>
+          <Paragraph>Node.js</Paragraph>
+        </WhiteDiv>
+      </SkillsContainer>
     </SkillsDiv>
   );
 };

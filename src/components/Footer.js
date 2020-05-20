@@ -3,7 +3,7 @@ import styled from "styled-components/macro";
 
 const Nav = styled.div`
   margin: 0;
-  width: 45%;
+  width: 50%;
   height: 40px;
 
   @media screen and (max-width: 820px) {
@@ -17,10 +17,12 @@ const FooterDiv = styled.div`
   justify-content: center;
   align-items: center;
   height: 300px;
+  padding: 50px;
   background-color: #000;
 
-  @media screen and (max-width: 820px) {
+  @media screen and (max-width: 950px) {
     flex-direction: column;
+    padding: 0;
   }
 `;
 
@@ -36,12 +38,17 @@ const Text = styled.h1`
   }
 `;
 
-const Link = styled.button`
+const Link = styled.a`
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
   font-family: "Roboto";
   font-size: 24px;
   margin: 0 20px;
   border: 0;
   border-bottom: 2px solid #e92272;
+  text-decoration: none;
   text-transform: uppercase;
   background-color: #000;
   color: #fff;
@@ -114,8 +121,9 @@ const Link = styled.button`
       }
     }
   }
-  @media screen and (max-width: 820px) {
+  @media screen and (max-width: 950px) {
     font-size: 18px;
+    margin: 0 10px;
   }
 `;
 
@@ -124,8 +132,20 @@ export const Footer = () => {
     <FooterDiv>
       <Text>Say Hello...</Text>
       <Nav>
-        <Link href="https://www.linkedin.com">LinkedIn</Link>
-        <Link href="https://www.github.com">GitHub</Link>
+        <Link
+          href="https://www.linkedin.com/in/elin-aarenstrup/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </Link>
+        <Link
+          href="https://github.com/elinaarenstrup"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </Link>
         <Link href="mailto:elinaarenstrup@gmail.com">Email</Link>
       </Nav>
     </FooterDiv>

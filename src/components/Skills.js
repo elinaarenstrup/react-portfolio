@@ -116,6 +116,7 @@ const SkillsContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  flex-grow: 1;
   justify-content: center;
   align-items: top;
   width: 100%;
@@ -126,13 +127,11 @@ const GreyDiv = styled.div`
   width: 20%;
   padding: 20px;
   background-color: #f1f1f1;
-`;
 
-const WhiteDiv = styled.div`
-  margin: 10px;
-  width: 20%;
-  padding: 20px;
-  background-color: pink;
+  @media screen and (max-width: 820px) {
+    margin: 10px 0;
+    width: 100%;
+  }
 `;
 
 const Headline = styled.h3`
@@ -141,7 +140,8 @@ const Headline = styled.h3`
   text-align: center;
   margin: 30px auto;
   padding: 5px 15px;
-  color: #000;
+  color: #fff;
+  background-color: #000;
 
   @media screen and (max-width: 820px) {
     font-size: 30px;
@@ -169,36 +169,43 @@ export const Skills = () => {
       <SkillsContainer>
         <GreyDiv>
           <Headline>CODE</Headline>
-          <Paragraph>GitHub</Paragraph>
           <Paragraph>CSS3</Paragraph>
           <Paragraph>HTML5</Paragraph>
           <Paragraph>Javascript ES6</Paragraph>
+          <Paragraph>React</Paragraph>
+          <Paragraph>React Native</Paragraph>
+          <Paragraph>Node.js</Paragraph>
+          <Paragraph>MongoDB</Paragraph>
         </GreyDiv>
-        <WhiteDiv>
+
+        <GreyDiv>
           <Headline>TOOLBOX</Headline>
           <Paragraph>Slack</Paragraph>
           <Paragraph>Github</Paragraph>
           <Paragraph>Mob/pair programming</Paragraph>
+          <Paragraph>Adobe XD</Paragraph>
           <Paragraph>Photoshop</Paragraph>
           <Paragraph>Illustrator</Paragraph>
           <Paragraph>Visual Studio Code</Paragraph>
-        </WhiteDiv>
+        </GreyDiv>
 
         <GreyDiv>
           <Headline>MORE</Headline>
           <Paragraph>API:s</Paragraph>
           <Paragraph>Branding</Paragraph>
           <Paragraph>Strategy</Paragraph>
+          <Paragraph>Customer service</Paragraph>
           <Paragraph>Web Accessibly</Paragraph>
           <Paragraph>Agile methodology</Paragraph>
           <Paragraph>Graphic design</Paragraph>
+          <Paragraph>Illustration</Paragraph>
         </GreyDiv>
 
-        <WhiteDiv>
+        <GreyDiv>
           <Headline>UPCOMING</Headline>
-          <Paragraph>React</Paragraph>
-          <Paragraph>Node.js</Paragraph>
-        </WhiteDiv>
+          <Paragraph>UI</Paragraph>
+          <Paragraph>UX</Paragraph>
+        </GreyDiv>
       </SkillsContainer>
     </SkillsDiv>
   );

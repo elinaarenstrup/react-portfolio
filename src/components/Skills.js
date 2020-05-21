@@ -174,6 +174,7 @@ export const Skills = () => {
           <Paragraph>Javascript ES6</Paragraph>
           <Paragraph>React</Paragraph>
           <Paragraph>React Native</Paragraph>
+          <Paragraph>Redux</Paragraph>
           <Paragraph>Node.js</Paragraph>
           <Paragraph>MongoDB</Paragraph>
         </GreyDiv>
@@ -182,11 +183,13 @@ export const Skills = () => {
           <Headline>TOOLBOX</Headline>
           <Paragraph>Slack</Paragraph>
           <Paragraph>Github</Paragraph>
-          <Paragraph>Mob/pair programming</Paragraph>
+          <Paragraph>Kanban</Paragraph>
           <Paragraph>Adobe XD</Paragraph>
           <Paragraph>Photoshop</Paragraph>
           <Paragraph>Illustrator</Paragraph>
+          <Paragraph>VSC Live</Paragraph>
           <Paragraph>Visual Studio Code</Paragraph>
+          <Paragraph>Mob/pair programming</Paragraph>
         </GreyDiv>
 
         <GreyDiv>
@@ -195,6 +198,7 @@ export const Skills = () => {
           <Paragraph>Branding</Paragraph>
           <Paragraph>Strategy</Paragraph>
           <Paragraph>Customer service</Paragraph>
+          <Paragraph>Working remote</Paragraph>
           <Paragraph>Web Accessibly</Paragraph>
           <Paragraph>Agile methodology</Paragraph>
           <Paragraph>Graphic design</Paragraph>

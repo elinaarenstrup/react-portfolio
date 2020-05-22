@@ -122,6 +122,10 @@ const Link = styled.a`
     }
   }
   @media screen and (max-width: 950px) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
     font-size: 18px;
     margin: 0 10px;
   }

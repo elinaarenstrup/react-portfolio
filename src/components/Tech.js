@@ -75,11 +75,13 @@ export const Tech = () => {
         <TechText>Javascript Es6</TechText>
         <TechText>React</TechText>
         <TechText>Jsx</TechText>
+        <TechText>React hooks</TechText>
         <TechText>React Native</TechText>
         <TechText>Redux</TechText>
         <TechText>Node.js</TechText>
+        <TechText>MongoDB</TechText>
+        <TechText>Express</TechText>
         <TechText>API:s</TechText>
-        <TechText>React hooks</TechText>
         <TechText>Github</TechText>
         <TechText>VS Code</TechText>
         <TechText>Slack</TechText>

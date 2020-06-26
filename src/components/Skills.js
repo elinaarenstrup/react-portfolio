@@ -207,6 +207,8 @@ export const Skills = () => {
 
         <GreyDiv>
           <Headline>UPCOMING</Headline>
+          <Paragraph>SASS</Paragraph>
+          <Paragraph>Bootstrap</Paragraph>
           <Paragraph>UI</Paragraph>
           <Paragraph>UX</Paragraph>
         </GreyDiv>

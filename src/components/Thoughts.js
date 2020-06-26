@@ -215,20 +215,20 @@ export const Thoughts = () => {
         <Text2>My</Text2>
         <Text>thoughts</Text>
       </HeaderContainer>
+
       <ThoughtsContainer>
         <ImgBox />
-        <Headline>Have you ever heard of a crazy Tech-horse?</Headline>
+        <Headline>An ode to the Hippo team</Headline>
         <Paragraph>
-          "So I’m on week 17 of 24, and that’s just insane! 4 of 6 sprints are
-          done! It feels like it was yesterday I was in Stockholm for the first
-          meet-up and met my team for the first time (GO HIPPOS!). I never
-          thought that this Bootcamp thing was going to be so hard, but it sure
-          is! It’s hard, intense and so much fun. I’ve grown so much since
-          January and I can’t believe how much I’ve learnt in such a short
-          time."
+          For the past 6 months i've been lucky to work with 7 amazing and intelligent
+          women in the "Hippo" team. We have gone through 24 intense weeks of challenging
+          projects and a total rollercoaster ride of learning new stuff .
+          Now we are ready to take on the world as Frontend developers! Crazy!
+
+          With that said, I wanted to share some thoughts on this team-thingy :)
         </Paragraph>
         <Link
-          href="https://www.linkedin.com/pulse/ever-heard-crazy-tech-horse-elin-aarenstrup/"
+          href="https://www.linkedin.com/pulse/ode-hippo-team-elin-aarenstrup"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -236,6 +236,10 @@ export const Thoughts = () => {
         </Link>
       </ThoughtsContainer>
       <OtherThoughts>
+        <ThoughtText
+          title="Ever heard of a Crazy Tech-horse?"
+          link="https://www.linkedin.com/pulse/ever-heard-crazy-tech-horse-elin-aarenstrup/"
+        />
         <ThoughtText
           title="Tips on remote work"
           link="https://www.linkedin.com/pulse/stay-productive-when-working-remote-elin-aarenstrup/"

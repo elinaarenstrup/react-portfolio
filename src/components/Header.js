@@ -307,7 +307,7 @@ export const Header = () => {
             GitHub
           </Link>
           <Link
-            href="mailto:elinaarenstrup@gmail.com"
+            href="mailto:hej@elinaarenstrup.se"
             target="_blank"
             rel="noopener noreferrer"
           >

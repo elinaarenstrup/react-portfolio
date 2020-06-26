@@ -150,7 +150,7 @@ export const Footer = () => {
         >
           GitHub
         </Link>
-        <Link href="mailto:elinaarenstrup@gmail.com">Email</Link>
+        <Link href="mailto:hej@elinaarenstrup.se">Email</Link>
       </Nav>
     </FooterDiv>
   );

@@ -6,6 +6,7 @@ import happy from "../assets/Happy.png";
 import foodquiz from "../assets/Foodquiz.png";
 import movies from "../assets/Movies.png";
 import weather from "../assets/Weather.png";
+import flowers from "../assets/Flower.png"
 
 const Text = styled.h1`
   font-family: "Bebas Neue";
@@ -160,6 +161,12 @@ export const Projects = () => {
       <Text>Featured projects</Text>
       <CardDiv>
         <ProjectCard
+          coverImage={flowers}
+          title="Friday Flowers"
+          paragraph="A bouqetshop with both frontend and backend..."
+          link="https://github.com/elinaarenstrup/project-happy-thoughts"
+        />
+        <ProjectCard
           coverImage={happy}
           title="Happy thoughts"
           paragraph="A twitter-like app, but only for the good stuff..."
@@ -186,6 +193,21 @@ export const Projects = () => {
       </CardDiv>
       <OtherContainer>
         <Text2>Other projects</Text2>
+        <ProjectText
+          title="Happy thoughts API"
+          paragraph="Build an API which includes both GET and POST endpoints to create data...."
+          link="https://github.com/elinaarenstrup/project-happy-thoughts-api"
+        />
+        <ProjectText
+          title="MongoDB project"
+          paragraph="Build a database to store and retrieve data from and use that data to produce a RESTful API...."
+          link="https://github.com/elinaarenstrup/project-mongo-api"
+        />
+        <ProjectText
+          title="RESTFul API"
+          paragraph="RESTful API with routes and data manipulation in JS - selecting, filtering, and limiting arrays...."
+          link="https://github.com/elinaarenstrup/project-express-api"
+        />
         <ProjectText
           title="Food scanner"
           paragraph="An app that scans barcodes on food packages to retrieve the product name and ingredients...."

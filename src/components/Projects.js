@@ -14,6 +14,7 @@ const Text = styled.h1`
   text-align: left;
   margin: 0 0 30px 0;
   color: #000;
+  transition: all 0.3s;
 
   :hover {
     color: #e92272;

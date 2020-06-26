@@ -42,6 +42,7 @@ const Paragraph = styled.h2`
   line-height: 0.9;
   margin: 0 0 30px 0;
   color: #000;
+  transition: all 0.3s;
 
   :hover {
     color: yellow;
@@ -201,6 +202,7 @@ const HeyYou = styled.h1`
   text-align: left;
   margin: 100px 0 100px 0;
   color: #000;
+  transition: all 0.3s;
 
   :hover {
     -webkit-animation: wobble-ver-left 0.8s both;

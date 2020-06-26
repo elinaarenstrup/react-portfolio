@@ -9,6 +9,7 @@ const Text2 = styled.h2`
   padding: 10px 30px;
   margin: 0 0 10px 0;
   color: #e92272;
+  transition: all 0.3s;
 
   :hover {
     color: pink;

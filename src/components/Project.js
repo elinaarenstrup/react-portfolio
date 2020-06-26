@@ -10,6 +10,10 @@ const Title = styled.h2`
 
   color: #000;
 
+  :hover {
+    color: #e92272;
+  }
+
   @media screen and (max-width: 820px) {
     font-size: 24px;
   }

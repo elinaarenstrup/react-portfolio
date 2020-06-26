@@ -52,6 +52,7 @@ const TechText = styled.p`
   padding: 5px 15px;
   background-color: #000;
   color: #fff;
+  transition: all 0.3s;
 
   :hover {
     background-color: #e92272;

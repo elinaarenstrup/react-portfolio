@@ -11,6 +11,7 @@ const Text2 = styled.h2`
   margin: 0 0 10px 0;
   color: #e92272;
   display: inline;
+  transition: all 0.3s;
 
   :hover {
     color: pink;
@@ -189,6 +190,7 @@ const Link = styled.a`
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
+  transition: all 0.3s;
 
   :hover {
     color: #e92272;

@@ -8,6 +8,11 @@ const CardContainer = styled.div`
   margin-bottom: 20px;
   border: 10px solid #000;
   background-color: #000;
+  transition: all 1s;
+
+  :hover {
+    transform: scale(1.1);
+  }
 
   @media screen and (max-width: 600px) {
     margin-right: 0;

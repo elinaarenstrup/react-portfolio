@@ -18,7 +18,8 @@ const Title = styled.h2`
   font-weight: bolder;
   color: #000;
   background-color: yellow;
-
+  transition: all 0.3s;
+  
   @media screen and (max-width: 820px) {
     font-size: 24px;
     margin-right: 5px;
